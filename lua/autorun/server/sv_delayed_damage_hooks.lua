@@ -31,18 +31,19 @@ hook.Add("EntityTakeDamage", "ttt_dd_damage", function(target, dmginfo)
 					dmginfo:SetDamage(0)
 					local id = "ttt_dd_delay_" .. steamID .. tostring(CurTime())
 					timer.Create(id, delay, 1, function() 
+						local newdmginfo = DamageInfo()
 						local p = player.GetBySteamID64(steamID)
-						dmginfo:SetDamage(dmg)
+						newdmginfo:SetDamage(dmg)
 						if p then
 							if wep == "weapon_ttt_delay_deagle" then
-								dmginfo:SetInflictor(dDeagle)
+								newdmginfo:SetInflictor(dDeagle)
 							elseif wep == "weapon_ttt_delay_shotgun" then
-								dmginfo:SetInflictor(dShotgun)
+								newdmginfo:SetInflictor(dShotgun)
 							else
-								dmginfo:SetInflictor(dRifle)
+								newdmginfo:SetInflictor(dRifle)
 							end
-							dmginfo:SetAttacker(p)
-							target:TakeDamageInfo(dmginfo)
+							newdmginfo:SetAttacker(p)
+							target:TakeDamageInfo(newdmginfo)
 						end
 					end)
 					timers[id] = true
