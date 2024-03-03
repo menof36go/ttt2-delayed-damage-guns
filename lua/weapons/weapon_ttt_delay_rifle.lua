@@ -33,6 +33,7 @@ SWEP.Secondary.Sound = Sound("Default.Zoom")
 SWEP.HeadshotMultiplier = 4
 SWEP.AmmoEnt = "item_ammo_357_ttt"
 SWEP.CanBuy = {ROLE_TRAITOR}
+SWEP.LimitedStock = true
 SWEP.UseHands = true
 SWEP.ViewModel = Model("models/weapons/cstrike/c_snip_scout.mdl")
 SWEP.WorldModel = Model("models/weapons/w_snip_scout.mdl")
