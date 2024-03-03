@@ -34,6 +34,7 @@ SWEP.Primary.Sound = Sound("Weapon_XM1014.Single")
 SWEP.Primary.Recoil = 7
 SWEP.AmmoEnt = "item_box_buckshot_ttt"
 SWEP.CanBuy = {ROLE_TRAITOR}
+SWEP.LimitedStock = true
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/cstrike/c_shot_xm1014.mdl"
 SWEP.WorldModel = "models/weapons/w_shot_xm1014.mdl"
