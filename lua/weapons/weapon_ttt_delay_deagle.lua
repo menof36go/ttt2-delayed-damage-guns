@@ -32,6 +32,7 @@ SWEP.Primary.Sound = Sound("Weapon_Deagle.Single")
 SWEP.HeadshotMultiplier = 4
 SWEP.AmmoEnt = "item_ammo_revolver_ttt"
 SWEP.CanBuy = {ROLE_TRAITOR}
+SWEP.LimitedStock = true
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/cstrike/c_pist_deagle.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
